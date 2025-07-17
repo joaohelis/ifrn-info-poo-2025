@@ -1,19 +1,18 @@
-public class Produto{
+public class Produto {
 
-    public String nome;
-    public float preco;
+    String nome;
+    float preco;
 
     public void informarNome(){
-        System.out.println("O nome do produto é " + this.nome);
+        System.out.println("O nome do produto é " + nome);
     }
 
     public void informarPreco(){
-        System.out.println("O preço do produto é " + this.preco);
+        System.out.println("O preço do produto é " + preco);
     }
 
     public void fazerPromocao(){
-        float precoPromocional = this.preco - this.preco * 10 / 100;
-        this.preco = precoPromocional;
+        preco = preco - preco * 10 / 100;
     }
-
+    
 }
